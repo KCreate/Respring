@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F484B633186F68DF008F1CC5 /* wallpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = F484B632186F68DF008F1CC5 /* wallpaper.png */; };
 		F4B05BE6186A7EAF00622A64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B05BE5186A7EAF00622A64 /* Foundation.framework */; };
 		F4B05BE8186A7EAF00622A64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B05BE7186A7EAF00622A64 /* CoreGraphics.framework */; };
 		F4B05BEA186A7EAF00622A64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B05BE9186A7EAF00622A64 /* UIKit.framework */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F484B632186F68DF008F1CC5 /* wallpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallpaper.png; sourceTree = "<group>"; };
 		F4B05BE2186A7EAF00622A64 /* Respring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Respring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B05BE5186A7EAF00622A64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F4B05BE7186A7EAF00622A64 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +128,7 @@
 		F4B05BEC186A7EAF00622A64 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F484B632186F68DF008F1CC5 /* wallpaper.png */,
 				F4B05BED186A7EAF00622A64 /* Respring-Info.plist */,
 				F4B05BEE186A7EAF00622A64 /* InfoPlist.strings */,
 				F4B05BF1186A7EAF00622A64 /* main.m */,
@@ -199,6 +202,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Leonard Schuetz";
 				TargetAttributes = {
+					F4B05BE1186A7EAF00622A64 = {
+						DevelopmentTeam = 69M9G6Q88G;
+					};
 					F4B05C02186A7EAF00622A64 = {
 						TestTargetID = F4B05BE1186A7EAF00622A64;
 					};
@@ -230,6 +236,7 @@
 			files = (
 				F4B05BFE186A7EAF00622A64 /* Images.xcassets in Resources */,
 				F4B05BF0186A7EAF00622A64 /* InfoPlist.strings in Resources */,
+				F484B633186F68DF008F1CC5 /* wallpaper.png in Resources */,
 				F4B05BF9186A7EAF00622A64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,10 +385,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Respring/Respring-Prefix.pch";
 				INFOPLIST_FILE = "Respring/Respring-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,10 +403,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Respring/Respring-Prefix.pch";
 				INFOPLIST_FILE = "Respring/Respring-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +477,7 @@
 				F4B05C16186A7EAF00622A64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4B05C17186A7EAF00622A64 /* Build configuration list for PBXNativeTarget "RespringTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +486,7 @@
 				F4B05C19186A7EAF00622A64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
